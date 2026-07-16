@@ -13,7 +13,9 @@
 # [신규 코드] 이 파일에서 새로 작성한 부분은 retrieve()의 폴백 분기 + assemble_context() + answer_with_context()
 #      뿐이다 — 나머지(청킹·검색·provider 판단·LLM 호출)는 모두 위 두 파일에서 가져와 쓴다.
 # 실행: python3.11 -m streamlit run apps/rag_chatbot.py
-
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import streamlit as st
 
 from apps.m5b_agent_loop import PROVIDERS, get_client, provider_available
