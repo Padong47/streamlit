@@ -5,6 +5,9 @@
 #   무료티어 메모리(690MB~2.7GB 범위)를 잡아먹는다. ST2(m3_penguins)는 scikit-learn만 쓰므로 아래 6개면 충분하다.
 #   torch가 없으니 CPU 휠 인덱스(--extra-index-url .../whl/cpu)도 불필요하다.
 # [업로드] apps/m3_penguins.py + 이 requirements.txt + deploy/packages.txt 를 GitHub에 "개별 선택" 업로드.
+transformers
+torch
+openai
 streamlit==1.59.1
 pandas==2.3.3
 numpy==2.4.4
